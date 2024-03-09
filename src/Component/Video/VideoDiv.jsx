@@ -12,15 +12,15 @@ export default function VideoDiv() {
 
   return (
     <>
-      <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", justifyContent: "center"}}>
         {/* video Pic */}
         <div style={{ width: "50%" }}>
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=dQw4w9WgXcQ" // Replace with your video URL
-            controls={true} // Show player controls
+            url="https://firebasestorage.googleapis.com/v0/b/qr-app-a4a86.appspot.com/o/DOOZOO%20-%20NEXT%20GEN%20-%20FINAL%20HORIZONTAL.mp4?alt=media&token=c7a62121-971a-4651-bd9b-a68e8f432ff5" // Replace with your video URL
+            controls={true} 
             width="100%"
             height="400px"
-            light={VideoImg} // Specify the thumbnail image
+            light={VideoImg} 
           />
         </div>
         <Box sx={{ position: "relative", mt: 2 }}>
@@ -32,8 +32,8 @@ export default function VideoDiv() {
           />
         </Box>
         {isViewportWide && (
-          <Box
-            style={{
+          <Box 
+            sx={{
               position: "absolute",
               transform: "translate(350px, 180px)",
               zIndex: -1,

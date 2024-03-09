@@ -7,7 +7,7 @@ export default function MultiScreen() {
 
   return (
     <>
-      <Container sx={{ bgcolor: "#FF6600", my: 10 }}>
+      <Container sx={{ bgcolor: "#FF6600", my: 10 ,  maxWidth: "unset !important", }}>
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <img
             src={webImages}

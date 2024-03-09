@@ -18,14 +18,21 @@ export default function SocialButtons() {
         </Box>
       </Box>
       <br />
-      <Box sx={{display:'flex' , justifyContent:"space-between" , alignItems:"baseline" , alignContent:"center"}}>
-        <Box sx={{ display: "flex", gap: 2, ml: 3, fontSize: "12px" }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "baseline",
+          alignContent: "center",
+        }}
+      >
+        <Box sx={{ display: "flex", gap: 2, ml: 3, fontSize: "12px" , mb:1 }}>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             Doozoo Privacy Statement
           </Box>
           <Box>Terms of use</Box>
         </Box>
-        <Box sx={{mr:3}}>@ Doozoo inc 2023.</Box>
+        <Box sx={{ mr: 3 }}>@ Doozoo inc 2023.</Box>
       </Box>
     </>
   );

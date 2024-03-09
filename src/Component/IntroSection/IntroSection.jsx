@@ -61,7 +61,7 @@ export default function IntroSection() {
             }}
           >
             <Typography variant={isSmallScreen ? "h4" : "h3"}>
-              Chat with <br /> Intelligent <br /> Doozoo AI & <br /> Discover{" "}
+              Chat with <br /> Intelligent <br /> Doozoo AI & <br /> Discover
               <br /> the Future <br />
               of Design
               <br /> Workflow
