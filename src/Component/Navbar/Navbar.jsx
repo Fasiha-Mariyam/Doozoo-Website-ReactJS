@@ -5,6 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
+import { Link } from "react-scroll"; 
 import LOGO from "../../assets/images/logo.png";
 
 export default function Navbar() {
@@ -32,7 +33,13 @@ export default function Navbar() {
             </Typography>
             <Button sx={{ color: "black", fontSize: "12px", textTransform: "none" }}>Sign in</Button>
             <Button sx={{ color: "#f9a004", fontSize: "12px" , textTransform: "none"  }}>
+            <Link
+              to="footer" 
+              smooth={true}
+              duration={500}
+            >
               Join the waitlist
+            </Link>
             </Button>
             
           </Box>

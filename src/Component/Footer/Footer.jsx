@@ -19,6 +19,7 @@ export default function SocialButtons() {
       </Box>
       <br />
       <Box
+       id="footer"
         sx={{
           display: "flex",
           justifyContent: "space-between",
