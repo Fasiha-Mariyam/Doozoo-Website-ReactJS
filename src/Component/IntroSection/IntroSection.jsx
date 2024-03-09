@@ -11,11 +11,14 @@ import Hand from "../../assets/images/Hand1.png";
 import ChatbotDesign from "./ChatbotDesign";
 
 export default function IntroSection() {
-  const theme = createTheme({
-    typography: {
-      fontFamily: `'your-font-family', sans-serif`,
-    },
-  });
+ const theme = createTheme({
+  typography: {
+    fontFamily: [
+      '"Bebas Neue"', // Font name in quotes
+      'sans-serif',
+    ].join(','),
+  },
+});
 
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -60,7 +63,7 @@ export default function IntroSection() {
               mb: isSmallScreen ? 2 : 0,
             }}
           >
-            <Typography variant={isSmallScreen ? "h4" : "h3"}>
+            <Typography variant={isSmallScreen ? "h4" : "h3"} fontWeight={"bold"} textTransform={"uppercase"}>
               Chat with <br /> Intelligent <br /> Doozoo AI & <br /> Discover
               <br /> the Future <br />
               of Design

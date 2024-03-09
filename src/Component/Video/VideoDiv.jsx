@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import Torus from "../../assets/images/Torus3.png";
 import Cube from "../../assets/images/RoundCube3.png";
 import VideoImg from "../../assets/images/Image.png";
@@ -7,8 +7,10 @@ import ReactPlayer from "react-player";
 import LOGO from "../../assets/images/logo.png";
 
 export default function VideoDiv() {
-  // Check if the viewport width exceeds 900px
-  const isViewportWide = window.innerWidth > 900;
+  // Check if the viewport width exceeds 900px using MUI's useMediaQuery
+  const isViewportWide = useMediaQuery("(min-width:900px)");
+  
+  const isViewportVeryWide = useMediaQuery("(min-width:1400px)");
 
   return (
     <>
@@ -27,7 +29,7 @@ export default function VideoDiv() {
           <img
             src={LOGO}
             alt="Logo"
-            style={{ position: "absolute", top: 0, left: isViewportWide ? -600 : -400 }}
+            style={{ position: "absolute", top: 0,left: isViewportVeryWide ? -900 : (isViewportWide ? -600 : -400) }}
             height={20}
           />
         </Box>
