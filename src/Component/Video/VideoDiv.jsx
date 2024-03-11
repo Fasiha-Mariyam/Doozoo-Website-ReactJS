@@ -8,11 +8,7 @@ import LOGO from "../../assets/images/logo.png";
 import playBtn from "../../assets/images/playButton.png";
 
 export default function VideoDiv() {
-  // Check if the viewport width exceeds 900px using MUI's useMediaQuery
-  const isViewportWide = useMediaQuery("(min-width:900px)");
-
-  const isViewportVeryWide = useMediaQuery("(min-width:1400px)");
-
+  const isSmallScreen = useMediaQuery("(max-width:600px)");
   return (
     <>
       <Box
@@ -56,18 +52,23 @@ export default function VideoDiv() {
             width: 90,
           }}
         />
-        <Avatar
-          alt="RoundCube3"
-          src={Cube}
-          sx={{
-            position: "absolute",
-            height: 200,
-            width: 225,
-            borderRadius: "0px",
-            transform: "translate(450px, 70px)",
-            zIndex: -1, // To make it behind VidImg
-          }}
-        />
+        {/* cube */}
+
+        {!isSmallScreen && (
+          <Avatar
+            alt="RoundCube3"
+            src={Cube}
+            sx={{
+              position: "absolute",
+              height: 200,
+              width: 225,
+              borderRadius: "0px",
+              transform: "translate(450px, 70px)",
+              zIndex: -1, // To make it behind VidImg
+            }}
+          />
+        )}
+        {/* torus */}
         <Avatar
           alt="Torus3"
           src={Torus}
