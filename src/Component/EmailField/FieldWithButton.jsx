@@ -7,7 +7,7 @@ import { Box, IconButton, Typography } from "@mui/material";
 export default function FieldWithButton() {
   return (
     <>
-      <Box sx={{ p: 2 }}>
+      <Box sx={{ p: 2, width: "100%" }}>
         <TextField
           placeholder="Drop your email"
           variant="outlined"
@@ -15,6 +15,7 @@ export default function FieldWithButton() {
           sx={{
             backgroundColor: "white",
             borderRadius: 4,
+            width: "100%",
             paddingBottom: 2,
             "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
               borderColor: "#F37C41",

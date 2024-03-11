@@ -19,15 +19,16 @@ export default function SocialButtons() {
       </Box>
       <br />
       <Box
-       id="footer"
+        id="footer"
         sx={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "baseline",
           alignContent: "center",
+          mb: 5,
         }}
       >
-        <Box sx={{ display: "flex", gap: 2, ml: 3, fontSize: "12px" , mb:1 }}>
+        <Box sx={{ display: "flex", gap: 2, ml: 3, fontSize: "12px", mb: 1 }}>
           <Box sx={{ display: "flex", alignItems: "center" }}>
             Doozoo Privacy Statement
           </Box>

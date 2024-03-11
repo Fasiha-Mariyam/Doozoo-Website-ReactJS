@@ -10,7 +10,7 @@ import LOGO from "../../assets/images/logo.png";
 
 export default function Navbar() {
   return (
-    <Box >
+    <Box fontFamily={"outfit"}>
       <AppBar
         position="static"
         sx={{ backgroundColor: "white", boxShadow: "none" }}
@@ -28,11 +28,11 @@ export default function Navbar() {
             </IconButton>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center" }}>
-          <Typography sx={{ color: "black",fontSize:"12px" }}>
+          <Typography sx={{ color: "black",fontSize:"12px" }} fontFamily={"outfit"}>
               Have access already?
             </Typography>
-            <Button sx={{ color: "black", fontSize: "12px", textTransform: "none" }}>Sign in</Button>
-            <Button sx={{ color: "#f9a004", fontSize: "12px" , textTransform: "none"  }}>
+            <Button sx={{ color: "black", fontSize: "12px", textTransform: "none" , fontFamily:"outfit" }}>Sign in</Button>
+            <Button sx={{ color: "#f9a004", fontSize: "12px" , textTransform: "none" , fontFamily:"outfit" }}>
             <Link
               to="footer" 
               smooth={true}
